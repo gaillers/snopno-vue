@@ -1,10 +1,8 @@
 <template>
   <section class="says">
     <div class="says-us">
-      <h2 class="says__title">WHAT THEY SAYS</h2>
-      <p class="says__text">
-        LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE
-      </p>
+      <TitleArticle titles="what they says"/>
+      <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
     </div>
     <div class="container-says">
       <div class="slider-wrapper">
@@ -53,11 +51,15 @@
 
 <script>
 import SlideButton from '../components/Says/button/SlideButton';
+import TitleArticle from '../components/TitleArticle';
+import TextArticle from '../components/TextArticle'
 
 export default {
   name: 'Says',
   components: {
     SlideButton,
+    TitleArticle,
+    TextArticle
   }
 };
 </script>
@@ -72,31 +74,7 @@ export default {
 .says-us {
   width: 617px;
   margin: 0 auto;
-}
-.says__title {
-  opacity: 0.9;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 38px;
-  line-height: 0.74;
-  letter-spacing: 2.28px;
-  text-align: center;
-  color: #000000e6;
-  margin: 0 auto;
-  padding-top: 130px;
-  text-transform: uppercase;
-}
-.says__text {
-  opacity: 0.62;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #0000009e;
-  margin: 0 auto;
-  padding-top: 17px;
-  padding-bottom: 120px;
-  text-transform: uppercase;
+  padding-top: 120px;
 }
 .container-says {
   display: flex;

@@ -1,10 +1,8 @@
 <template>
   <section class="services">
       <div class="services-us">
-        <h2 class="services__title">our services</h2>
-        <p class="services__text">
-          lorem ipsum dolor sit amet event landing template
-        </p>
+       <TitleArticle titles="our services"/>
+       <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
       </div>
       <div class="services-info">
         <div class="services__info container-designing">
@@ -78,8 +76,14 @@
 </template>
 
 <script>
+import TitleArticle from '../components/TitleArticle';
+import TextArticle from '../components/TextArticle'
 export default {
-
+ name: 'Services',
+ components: {
+   TitleArticle,
+   TextArticle,
+ }
 }
 </script>
 
@@ -95,31 +99,6 @@ export default {
   margin: 0 auto;
   padding-top: 130px;
 }
-.services__title {
-  opacity: 0.9;
-  font-family: "Montserrat", sans-serif;
-  font-size: 38px;
-  line-height: 0.74;
-  letter-spacing: 2.28px;
-  text-align: center;
-  color: #000000e6;
-  margin: 0 auto;
-  margin-bottom: 17px;
-  text-transform: uppercase;
-}
-.services__text {
-  opacity: 0.62;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #0000009e;
-  margin: 0 auto;
-  margin-bottom: 120px;
-  text-transform: uppercase;
-}
-
 .services-info {
   max-width: 1170px;
   width: 100%;
@@ -152,6 +131,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 
 .designing-title {
@@ -196,7 +176,7 @@ export default {
     background-color: #ffffff;
     border-radius: 1.6px;
     left: 138px;
-    top: 140px;
+    top: 159px;
     transition: ease-out 0.5s;
 
     &::before {
@@ -258,6 +238,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 .design-title {
   width: 312px;
@@ -305,7 +286,7 @@ export default {
   background-color: #ffffff;
   border-radius: 1.6px;
   left: 138px;
-  top: 115px;
+  top: 136px;
   transition: ease-out 0.5s;
 
   &::before {
@@ -343,6 +324,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 
 .cool-title {
@@ -394,6 +376,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 
 .html-title {
@@ -444,6 +427,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 .virtual-title {
   width: 287px;
@@ -492,6 +476,7 @@ export default {
   letter-spacing: 1px;
   text-align: left;
   color: #fffffff3;
+  padding-bottom: 20px;
 }
 
 .recopt-title {

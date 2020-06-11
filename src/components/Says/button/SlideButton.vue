@@ -17,7 +17,7 @@ export default {
   position: absolute;
   right: auto;
   margin-left: 575px;
-  top: 6785px;
+  top: 6795px;
 }
 .arrow-prev,
 .arrow-next {

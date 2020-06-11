@@ -1,10 +1,8 @@
 <template>
   <section class="team">
       <div class="team-us">
-        <h2 class="team__title">small team</h2>
-        <p class="team__text">
-          lorem ipsum dolor sit amet event landing template
-        </p>
+        <TitleArticle titles="small team"/>
+        <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
       </div>
       <div class="content-item">
         <ul ><!--Margeret-->
@@ -100,8 +98,16 @@
 </template>
 
 <script>
-export default {
+import TitleArticle from '../components/TitleArticle';
+import TextArticle from '../components/TextArticle';
 
+export default {
+ name: 'Team',
+ components: {
+   TitleArticle,
+   TextArticle,
+   
+ }
 }
 </script>
 
@@ -116,30 +122,6 @@ export default {
  width: 617px;
  margin: 0 auto;
  padding-top: 130px;
-}
-.team__title {
- opacity: 0.9;
- font-family: "Montserrat", sans-serif;
- font-size: 38px;
- line-height: 0.74;
- letter-spacing: 2.28px;
- text-align: center;
- color: #000000e6;
- margin: 0 auto;
- margin-bottom: 17px;
- text-transform: uppercase;
-}
-.team__text {
- opacity: 0.62;
- font-family: "Raleway", sans-serif;
- font-size: 18px;
- line-height: 1.56;
- letter-spacing: 2px;
- text-align: center;
- color: #0000009e;
- margin: 0 auto;
- margin-bottom: 120px;
- text-transform: uppercase;
 }
 .content-item {
  width: 1200px;

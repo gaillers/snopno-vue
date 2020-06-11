@@ -1,10 +1,8 @@
 <template>
   <section class="works">
     <div class="works-us">
-      <h2 class="works__title">featured works</h2>
-      <p class="works__text">
-        lorem ipsum dolor sit amet event landing template
-      </p>
+      <TitleArticle titles="featured works"/>
+      <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
     </div>
     <div class="content-img">
       <img src="../assets/images/1 works.png" alt="1 works" />
@@ -18,7 +16,17 @@
 </template>
 
 <script>
-export default {};
+import TitleArticle from '../components/TitleArticle';
+import TextArticle from '../components/TextArticle';
+
+export default {
+ name: 'Works',
+ components: {
+   TitleArticle,
+   TextArticle,
+   
+ }
+};
 </script>
 
 <style lang="scss">
@@ -30,30 +38,6 @@ export default {};
 .works-us {
   width: 617px;
   margin: 0 auto;
-}
-.works__title {
-  opacity: 0.9;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 38px;
-  line-height: 0.74;
-  letter-spacing: 2.28px;
-  text-align: center;
-  color: #000000e6;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-bottom: 17px;
-}
-.works__text {
-  opacity: 0.62;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #0000009e;
-  margin: 0 auto;
-  margin-bottom: 120px;
-  text-transform: uppercase;
 }
 .content-img {
   max-width: 1200px;

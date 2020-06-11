@@ -14,7 +14,7 @@
       <MainButton/> 
       <img
         class="banka"
-        src="../assets//svgs/banka.svg"
+        src="../assets/svgs/banka.svg"
         alt="banka"
         height="100"
         width="100"

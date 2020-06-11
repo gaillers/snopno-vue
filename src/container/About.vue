@@ -1,10 +1,8 @@
 <template>
   <section class="about">
     <div class="about-us">
-      <h2 class="about__title">about us</h2>
-      <p class="about__text">
-        lorem ipsum dolor sit amet event landing template
-      </p>
+      <TitleArticle titles="about us"/>
+      <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
     </div>
     <div class="container-info">
       <div class="block__photo">
@@ -33,9 +31,15 @@
 </template>
 
 <script>
-
+import TitleArticle from '../components/TitleArticle';
+import TextArticle from '../components/TextArticle'
 export default {
-  
+ name: 'About',
+ components: {
+   TitleArticle,
+   TextArticle,
+   
+ }
 };
 </script>
 
@@ -51,31 +55,6 @@ export default {
   margin: 0 auto;
   padding-top: 130px;
 }
-.about__title {
-  opacity: 0.9;
-  font-family: "Montserrat", sans-serif;
-  font-size: 38px;
-  line-height: 0.74;
-  letter-spacing: 2.28px;
-  text-align: center;
-  color: #000000e6;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-bottom: 17px;
-}
-.about__text {
-  opacity: 0.62;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #0000009e;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-bottom: 100px;
-}
-
 .container-info {
   display: flex;
   justify-content: space-evenly;
@@ -110,6 +89,7 @@ export default {
   color: #000000c0;
   font-size: 21px;
   text-transform: uppercase;
+  padding: 17px 0 17px 0;
 }
 
 .block__text {
@@ -125,6 +105,7 @@ export default {
   letter-spacing: 0.8px;
   text-align: left;
   color: #000000bd;
+  padding-bottom: 16px;
   
 }
 
