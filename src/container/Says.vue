@@ -5,30 +5,8 @@
       <TextArticle texts="lorem ipsum dolor sit amet event landing template"/>
     </div>
     <div class="container-says">
-      <div class="slider-wrapper">
-        <div class="slide active">
-          <img src="../assets/images/saysteam1.png" alt="saysteam1" />
-          <div class="background__says"></div>
-        </div>
-        <div class="slide">
-          <img src="../assets/images/saysteam2.png" alt="saysteam2" />
-          <div class="background__says"></div>
-        </div>
-        <div class="slide">
-          <img src="../assets/images/saysteam3.png" alt="saysteam3" />
-          <div class="background__says"></div>
-        </div>
-        <div class="slide">
-          <img src="../assets/images/saysteam4.png" alt="saysteam3" />
-          <div class="background__says"></div>
-        </div>
-      </div>
-      <div class="dots-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
+      <Slider/>
+      <SliderDots/>
       <div class="block__information">
         <h3 class="block__information-text"><b>richard</b> / ui/ux designer</h3>
         <p class="block__information-title">
@@ -43,24 +21,29 @@
           <span class="active"></span>
           <span class="active"></span>
         </div>
-        <SlideButton/>
+        <SliderButton/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import SlideButton from '../components/Says/button/SlideButton';
+import Slider from '../components/Says/Slider';
+import SliderDots from '../components/Says/SliderDots';
+import SliderButton from '../components/Says/SliderButton';
 import TitleArticle from '../components/TitleArticle';
-import TextArticle from '../components/TextArticle'
+import TextArticle from '../components/TextArticle';
+
 
 export default {
   name: 'Says',
   components: {
-    SlideButton,
+    Slider,
+    SliderDots,
+    SliderButton,
     TitleArticle,
     TextArticle
-  }
+  },
 };
 </script>
 
@@ -82,41 +65,6 @@ export default {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-}
-.slider-wrapper {
-  position: relative;
-}
-.slide {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  top: 0px;
-}
-.slide.active {
-  position: relative;
-  z-index: 1;
-  display: block;
-}
-.dots-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  right: 20%;
-  margin-top: 38.7%;
-}
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
-  background-color: #d0d0d0;
-  margin-right: 2px;
-  cursor: pointer;
-}
-.dot.active {
-  width: 11px;
-  height: 10px;
-  border-radius: 3px;
-  background-color: #71f6eb;
 }
 .background__says {
   position: absolute;
