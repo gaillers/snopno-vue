@@ -1,12 +1,14 @@
 <template>
   <div class="arrows">
-    <div id="btn-prev" class="arrow-prev" tabindex="1" role="button"></div>
-    <div id="btn-next" class="arrow-next" tabindex="2" role="button"></div>
+    <div id="btn-prev" class="arrow-prev" role="button"></div>
+    <div id="btn-next" class="arrow-next" role="button"></div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style lang="scss" scoped>
