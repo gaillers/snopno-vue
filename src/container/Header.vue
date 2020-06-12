@@ -12,13 +12,14 @@
     <div class="container">
       <TitleMain/>
       <MainButton/> 
-      <img
+      <!-- <img
         class="banka"
         src="../assets/svgs/banka.svg"
         alt="banka"
         height="100"
         width="100"
-      />
+      /> -->
+      <SvgBanka/>
     </div>
   </header>
 </template>
@@ -27,6 +28,7 @@
 import MainButton from '../components/Header/button/MainButton'
 import Burger from '../components/Header/nav/Burger'
 import TitleMain from '../components/Header/title/TitleMain'
+import SvgBanka from '../components/Header/svg/SvgBanka';
 
 export default {
   name: 'Header',
@@ -34,6 +36,7 @@ export default {
     MainButton,
     Burger,
     TitleMain,
+    SvgBanka,
   },
 };
 </script>
@@ -60,14 +63,5 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-}
-.banka {
-  display: flex;
-  margin: 0 auto;
-  margin-right: 138px;
-}
-
-.svg-banka {
-  display: none;
 }
 </style>

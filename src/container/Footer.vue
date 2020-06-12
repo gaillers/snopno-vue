@@ -10,10 +10,12 @@
 
 <script>
 import SocialFooter from '../components/Footer/nav/SocialFooter'
+
 export default {
   name: 'Footer',
   components: {
     SocialFooter,
+    
   }
 };
 </script>
