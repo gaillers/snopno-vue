@@ -1,4 +1,4 @@
-<template>
+<template v-if="loginType === 'username'">
   <h1 class="say">say hello to shopno!<br />agency corporate shopno theme</h1>
 </template>
 
@@ -7,6 +7,7 @@
 export default {
    
 };
+
 </script>
 
 

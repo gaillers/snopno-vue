@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form v-on:submit.prevent="onSubmit">
     <div class="form__group">
       <label class="form-label" for="name">Name</label>
       <input
